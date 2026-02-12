@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <div class="logo">
+            <img src="Images/logo.png" alt="PaperPrint Logo">
+        </div>
+        <div class="header-center">
+            <h1 class="title">PaperPrint</h1>
+            <p class="slogan">Precision, Quality, and Creativity in Every Print</p>
+        </div>
+        <div class="icons">
+            <div class="dropdown">
+                <button class="dropbtn emoji">🌍</button>
+                <div class="dropdown-content">
+                    <h6>Select Country</h6>
+                    <a href="#">USA</a>
+                    <a href="#">UK</a>
+                    <a href="#">France</a>
+                    <a href="#">Spain</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn emoji">⚙️</button>
+                <div class="dropdown-content">
+                    <h6>Select Language</h6>
+                    <a href="#">English</a>
+                    <a href="#">Spanish</a>
+                    <a href="#">French</a>
+                    <a href="#">German</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn emoji">💬</button>
+                <div class="dropdown-content">
+                    <h6>Chat Options</h6>
+                    <a href="mailto:info@paperprint.com">Email Us</a>
+                    <a href="tel:+1234567890">Call Us</a>
+                    <a href="#">Live Chat</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="customization.html">Customization</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main-content">
+
+    <!-- FILTER DROPDOWN -->
+    <div class="filter-dropdown" style="text-align:center; margin-bottom:30px;">
+        <label for="categorySelect" style="font-weight:bold; margin-right:10px;">Filter Products:</label>
+        <select id="categorySelect" onchange="filterProducts(this.value)" style="padding:8px; font-size:16px;">
+            <option value="all">All</option>
+            <option value="clothing">Clothing</option>
+            <option value="print">Print</option>
+        </select>
+    </div>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+
+        <div class="product clothing">
+            <img src="./Images/polo.jpg" alt="Polo Shirt">
+            <p>Polo Shirt</p>
+        </div>
+
+        <div class="product clothing">
+            <img src="./Images/sweater.jpg" alt="Sweater">
+            <p>Sweater</p>
+        </div>
+
+        <div class="product clothing">
+            <img src="./Images/cap.jpg" alt="Cap">
+            <p>Cap</p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>Contact Us: info@paperprint.com | Phone: (123) 456-7890</p>
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="products.html">Products</a> |
+        <a href="services.html">Services</a> |
+        <a href="customization.html">Customization</a>
+    </p>
+</footer>
+
+</body>
+</html>
